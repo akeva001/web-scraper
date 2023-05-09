@@ -1,6 +1,7 @@
 import Sidebar from "@/components/Sidebar";
 import "./globals.css";
 import { Inter } from "next/font/google";
+import SearchBar from "@/components/SearchBar";
 
 export const metadata = {
   title: "Web Scraper",
@@ -18,7 +19,7 @@ export default function RootLayout({
         <Sidebar />
 
         <main className="p-10 max-w-7xl w-full mx-auto overflow-y-auto">
-          {/* Header */}
+          <SearchBar />
           {children}
         </main>
       </body>
